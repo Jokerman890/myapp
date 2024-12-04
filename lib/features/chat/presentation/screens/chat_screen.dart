@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:myapp/core/widgets/glass_container.dart';
 import '../../models/chat_message.dart';
-import '../../models/message_role.dart';
 import '../../providers/chat_provider.dart';
 
 class ChatScreen extends ConsumerStatefulWidget {
