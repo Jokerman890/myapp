@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="1600" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        .title { font: bold 24px sans-serif; fill: #6750A4; }
+        .subtitle { font: bold 20px sans-serif; fill: #03DAC6; }
+        .text { font: 16px sans-serif; fill: #333; }
+        .code { font: 14px monospace; fill: #666; }
+        .section { font: bold 18px sans-serif; fill: #6750A4; }
+    </style>
+    
+    <rect width="100%" height="100%" fill="#f8f9fa"/>
+    
+    <!-- Titel -->
+    <text x="40" y="50" class="title">Polyglotte Translator - Technische Dokumentation</text>
+    
+    <!-- Architektur -->
+    <text x="40" y="100" class="section">Architektur</text>
+    <text x="40" y="130" class="subtitle">Clean Architecture</text>
+    <text x="60" y="160" class="text">• Feature-basierte Struktur</text>
+    <text x="60" y="185" class="text">• Dependency Injection mit Riverpod</text>
+    <text x="60" y="210" class="text">• Klare Trennung von UI, Logik und Daten</text>
+    
+    <!-- Features -->
+    <text x="40" y="260" class="section">Kernfunktionen</text>
+    
+    <text x="40" y="290" class="subtitle">Übersetzungs-Engine</text>
+    <text x="60" y="320" class="text">• Mistral Medium Modell Integration</text>
+    <text x="60" y="345" class="text">• Kontext-basierte Prompt-Optimierung</text>
+    <text x="60" y="370" class="text">• Intelligentes Caching-System</text>
+    <text x="60" y="395" class="code">Model: mistral-medium</text>
+    <text x="60" y="420" class="code">Max Tokens: 2000</text>
+    
+    <text x="40" y="470" class="subtitle">KI-Chat System</text>
+    <text x="60" y="500" class="text">• Zustandsverwaltung mit Riverpod</text>
+    <text x="60" y="525" class="text">• Persistente Chat-Historie</text>
+    <text x="60" y="550" class="text">• Optimierte Prompt-Templates</text>
+    
+    <!-- UI/UX -->
+    <text x="40" y="600" class="section">UI/UX Design</text>
+    
+    <text x="40" y="630" class="subtitle">Kristall-Design-System</text>
+    <text x="60" y="660" class="text">• Custom Widgets mit Glasmorphismus</text>
+    <text x="60" y="685" class="text">• Animierte Übergänge</text>
+    <text x="60" y="710" class="text">• Responsive Layouts</text>
+    
+    <text x="40" y="760" class="subtitle">Animationen</text>
+    <text x="60" y="790" class="text">• Flutter Animate Integration</text>
+    <text x="60" y="815" class="text">• Lottie Animationen</text>
+    <text x="60" y="840" class="text">• Custom Painter für Kristall-Effekte</text>
+    
+    <!-- Technische Details -->
+    <text x="40" y="890" class="section">Technische Details</text>
+    
+    <text x="40" y="920" class="subtitle">API Integration</text>
+    <text x="60" y="950" class="text">• Dio für HTTP-Requests</text>
+    <text x="60" y="975" class="text">• Retry-Mechanismus</text>
+    <text x="60" y="1000" class="text">• Error Handling</text>
+    <text x="60" y="1025" class="code">Base URL: https://api.mistral.ai/v1</text>
+    
+    <text x="40" y="1075" class="subtitle">Datenpersistenz</text>
+    <text x="60" y="1105" class="text">• SharedPreferences für lokale Daten</text>
+    <text x="60" y="1130" class="text">• In-Memory Caching</text>
+    <text x="60" y="1155" class="text">• JSON Serialisierung</text>
+    
+    <!-- Performance -->
+    <text x="40" y="1205" class="section">Performance-Optimierungen</text>
+    <text x="60" y="1235" class="text">• Lazy Loading</text>
+    <text x="60" y="1260" class="text">• Debouncing für API-Calls</text>
+    <text x="60" y="1285" class="text">• Widget-Tree Optimierung</text>
+    
+    <!-- Dekorative Elemente -->
+    <rect x="20" y="20" width="760" height="1560" rx="15" 
+          stroke="#6750A4" stroke-width="2" fill="none"/>
+    <path d="M40,70 L760,70" stroke="#03DAC6" stroke-width="1"/>
+    
+    <!-- Kristall-Dekorationen -->
+    <g transform="translate(700,40) scale(0.4)">
+        <path d="M0,0 L30,-30 L60,0 L30,30 Z" 
+              fill="none" stroke="#6750A4" stroke-width="2">
+            <animate attributeName="stroke-opacity"
+                     values="0.2;0.8;0.2" dur="3s"
+                     repeatCount="indefinite"/>
+        </path>
+        <path d="M15,-15 L45,-15 L45,15 L15,15 Z"
+              fill="none" stroke="#03DAC6" stroke-width="2">
+            <animate attributeName="stroke-opacity"
+                     values="0.8;0.2;0.8" dur="3s"
+                     repeatCount="indefinite"/>
+        </path>
+    </g>
+    
+    <!-- Architektur-Diagramm -->
+    <g transform="translate(500,150)">
+        <rect x="0" y="0" width="200" height="100" rx="10"
+              fill="none" stroke="#6750A4" stroke-width="2"/>
+        <text x="100" y="55" class="text" text-anchor="middle">Clean Architecture</text>
+        
+        <path d="M100,100 L100,150 L50,200 M100,150 L150,200"
+              stroke="#03DAC6" stroke-width="2" fill="none"/>
+              
+        <rect x="-50" y="200" width="100" height="50" rx="5"
+              fill="none" stroke="#03DAC6" stroke-width="2"/>
+        <rect x="50" y="200" width="100" height="50" rx="5"
+              fill="none" stroke="#03DAC6" stroke-width="2"/>
+              
+        <text x="0" y="230" class="text" text-anchor="middle" font-size="12">UI</text>
+        <text x="100" y="230" class="text" text-anchor="middle" font-size="12">Logic</text>
+    </g>
+</svg>

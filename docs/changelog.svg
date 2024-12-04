@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        .title { font: bold 24px sans-serif; fill: #333; }
+        .version { font: bold 18px sans-serif; fill: #666; }
+        .date { font: 14px sans-serif; fill: #888; }
+        .change { font: 16px sans-serif; fill: #444; }
+    </style>
+    
+    <rect width="100%" height="100%" fill="#fff"/>
+    
+    <text x="50" y="50" class="title">Polyglotte Changelog</text>
+    
+    <g transform="translate(50, 100)">
+        <text x="0" y="0" class="version">Version 1.0.0</text>
+        <text x="150" y="0" class="date">(2024-01-20)</text>
+        <text x="20" y="30" class="change">• Initiale Version der Polyglotte App</text>
+        <text x="20" y="60" class="change">• Implementierung der Übersetzungsfunktion</text>
+        <text x="20" y="90" class="change">• Unterstützung für 12 Sprachen</text>
+        <text x="20" y="120" class="change">• Modernes UI-Design mit Glasmorphismus</text>
+    </g>
+    
+    <g transform="translate(50, 250)">
+        <text x="0" y="0" class="version">Version 0.2.0</text>
+        <text x="150" y="0" class="date">(2024-01-19)</text>
+        <text x="20" y="30" class="change">• Integration der Mistral AI API</text>
+        <text x="20" y="60" class="change">• Verbessertes Fehlerhandling</text>
+        <text x="20" y="90" class="change">• Cache-System für Übersetzungen</text>
+    </g>
+    
+    <g transform="translate(50, 400)">
+        <text x="0" y="0" class="version">Version 0.1.0</text>
+        <text x="150" y="0" class="date">(2024-01-18)</text>
+        <text x="20" y="30" class="change">• Erste Projektstruktur</text>
+        <text x="20" y="60" class="change">• Basis-UI-Komponenten</text>
+        <text x="20" y="90" class="change">• Provider-Setup</text>
+    </g>
+</svg>
