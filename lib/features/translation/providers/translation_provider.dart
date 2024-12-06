@@ -7,7 +7,8 @@ final translationServiceProvider = Provider<TranslationService>((ref) {
   return TranslationService();
 });
 
-final translationStateProvider = StateNotifierProvider<TranslationNotifier, AsyncValue<Translation?>>((ref) {
+final translationStateProvider =
+    StateNotifierProvider<TranslationNotifier, AsyncValue<Translation?>>((ref) {
   final service = ref.watch(translationServiceProvider);
   return TranslationNotifier(service);
 });
@@ -19,6 +20,7 @@ final primaryLanguagesProvider = Provider<List<String>>((ref) {
     'fr',
     'es',
     'it',
+    'uk',
   ];
 });
 
@@ -33,6 +35,7 @@ final supportedLanguagesProvider = Provider<Map<String, String>>((ref) {
     'nl': 'Niederländisch',
     'pl': 'Polnisch',
     'ru': 'Russisch',
+    'uk': 'Ukrainisch',
     'ja': 'Japanisch',
     'ko': 'Koreanisch',
     'zh': 'Chinesisch',
@@ -41,7 +44,7 @@ final supportedLanguagesProvider = Provider<Map<String, String>>((ref) {
 
 class TranslationNotifier extends StateNotifier<AsyncValue<Translation?>> {
   final TranslationService _service;
-  
+
   TranslationNotifier(this._service) : super(const AsyncValue.data(null));
 
   Future<void> translate({
@@ -50,17 +53,16 @@ class TranslationNotifier extends StateNotifier<AsyncValue<Translation?>> {
   }) async {
     try {
       state = const AsyncValue.loading();
-      
+
       final translation = await _service.translate(
         text: text,
         targetLanguage: targetLanguage,
       );
-      
+
       state = AsyncValue.data(translation);
-      
+
       // Cache die Übersetzung
       await _cacheTranslation(translation);
-      
     } catch (error, stackTrace) {
       state = AsyncValue.error(error, stackTrace);
     }
@@ -85,7 +87,7 @@ class TranslationNotifier extends StateNotifier<AsyncValue<Translation?>> {
       final prefs = await SharedPreferences.getInstance();
       final key = '${text}_$targetLanguage';
       final cached = prefs.getString(key);
-      
+
       if (cached != null) {
         return Translation.fromJson(
           Map<String, dynamic>.from(cached as Map),

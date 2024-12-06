@@ -1,17 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'core/config/app_config.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'features/translation/presentation/screens/translation_screen.dart';
+import 'core/theme/app_theme.dart';
 
 void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  await AppConfig.initialize();
-  
-  runApp(
-    const ProviderScope(
-      child: MyApp(),
-    ),
-  );
+  await dotenv.load(fileName: ".env");
+  runApp(const ProviderScope(child: MyApp()));
 }
 
 class MyApp extends StatelessWidget {
@@ -20,16 +15,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Polyglotte',
+      title: 'Polyglotte Translator',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData.dark().copyWith(
-        scaffoldBackgroundColor: Colors.black,
-        primaryColor: Colors.blue.shade200,
-        colorScheme: ColorScheme.dark(
-          primary: Colors.blue.shade200,
-          secondary: Colors.purple.shade200,
-        ),
-      ),
+      theme: AppTheme.darkTheme,
       home: const TranslationScreen(),
     );
   }

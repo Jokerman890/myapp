@@ -1,16 +1,48 @@
-# myapp
+# 🌍 Polyglotte Translator
 
-A new Flutter project.
+Ein moderner, futuristischer Übersetzungs-Assistent mit eleganter Benutzeroberfläche.
 
-## Getting Started
+## ✨ Features
 
-This project is a starting point for a Flutter application.
+- 🎯 Präzise Übersetzungen in Echtzeit
+- 🎤 Spracheingabe-Unterstützung
+- 📸 Kamera-Übersetzung für Text in Bildern
+- 🌈 Elegantes, futuristisches UI-Design
+- 🌙 Dunkelmodus-Optimiert
+- ⚡ Schnelle Performance
+- 🔄 Unterstützung für über 30 Sprachen
 
-A few resources to get you started if this is your first Flutter project:
+## 🚀 Erste Schritte
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+1. Repository klonen
+2. Abhängigkeiten installieren: `flutter pub get`
+3. App starten: `flutter run`
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🛠️ Technologien
+
+- Flutter & Dart
+- Riverpod für State Management
+- Custom Glassmorphism UI
+- Animierte Übergänge
+- REST API Integration
+
+## 🎨 Design-Philosophie
+
+Polyglotte vereint Funktionalität mit ästhetischem Design:
+- 🎐 Glasmorphismus-Effekte
+- 💫 Subtile Animationen
+- 🌌 Futuristische Farbpalette
+- 📱 Responsive Layout
+
+## 🌐 Unterstützte Sprachen
+
+- 🇩🇪 Deutsch
+- 🇷🇺 Russisch
+- 🇺🇦 Ukrainisch
+- 🇬🇧 Englisch
+- 🇫🇷 Französisch
+- 🇪🇸 Spanisch
+- 🇮🇹 Italienisch
+- ... und viele mehr!
+
+Made with ❤️ in Deutschland
